@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Discussion App</title>
+    <link rel='stylesheet' href='style.css'>
+  </head>
+  <body>
+    <div class='top-bar'>
+      <h1>Discussion Portal</h1>
+    </div>
+    <div class='container'>
+      <div class='cont'>
+        <div class='btn-cont'>
+          <button class='btn' id='disc-btn'>New Question Form</button>
+          <input class='input-box' id='search' placeholder='search questions...'/>
+        </div>
+        <div id='disc-area'></div>
+      </div>
+      <div class='cont'>
+        <div id='new-disc' class='right-cont'>
+          <h1>Welcome to Discussion Portal !</h1>
+          <p>Enter a subject and question to get started</p>
+          <input class='input-box' name='subject' id='subject' placeholder='Subject' />
+          <br />
+          <textarea class='input-box' id='question' placeholder='Question' rows='5'></textarea>
+          <button class='btn' id='submit-disc'>Submit</button>
+        </div>
+        <div id='resp-disc' class='right-cont invisible'>
+          <div id = 'resolve-cont'>  
+            <h4>Question</h4>
+            <div id='resp-question'></div>
+            <button class='btn' id='resolve'>Resolve</button>
+          </div>
+          <br />
+          <br />
+          <h4>Response</h4>
+          <div id='resp-response'></div>
+          <h4>Add Response</h4>
+          <div id='resp-add'>
+            <input class='input-box' id='resp-name' placeholder='Enter name' />
+            <br />
+            <textarea class='input-box' id='resp-comment' placeholder='Enter comment' rows='3'></textarea>
+            <button class='btn' id='submit-resp'>Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src='code.js'></script>
+</html>
